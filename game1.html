@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name= "keywords" content = "game, video game, pixel, fantasy, bunny, cute">
+        <title>Fluffernutter and Friends</title>
+
+        <link rel="stylesheet" type="text/css" href="css/master.css">
+        <link rel="stylesheet" type="text/css" href="css/nav-style.css">
+        <link rel="stylesheet" type="text/css" href="css/fluffy.css">
+    </head>
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+ integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+ crossorigin="anonymous"> </script>
+
+
+<script type="text/javascript">
+   var images_array = ["bunny_gameplay.png", "bunny_sit.png", "bunny_run.png"]
+   var img_index = 0;
+
+   $(document).ready (function () {
+       slideshow();
+   });
+
+   function slideshow () {
+       $("#slide img").fadeOut(2000, nextSlide);
+   }
+
+   function nextSlide () {
+        img_index = (img_index + 1) % images_array.length;
+        $("#slide img").attr("src", "images/" + images_array[img_index]);
+        $("#slide img").fadeIn(2000, slideshow);
+    }
+
+</script>
+
+ <body>
+
+    <header>
+
+        <div class = 'container'>
+            <a href = "index.html"> <img src = "images/logo_white_bg.png" alt = "logo" class = "logo" height = 60px style="margin: 5px" > 
+            </a>
+    </div>
+    <nav class = nav1 id = nav1>
+        <button class = "hamburger" id = "hamburger">
+            <i class = menu-btn></i>
+        </button>
+        <ul class = nav-ul id = nav-ul>
+                <li> <a href = "index.html">Home</a></li>
+                <li> <a href = "about.html">About</a></li>
+                <li> <a href = "game1.html">Bunny</a></li>
+                <li> <a href = "game2.html">Space</a></li>
+                <li> <a href = "game3.html">Soldier</a></li>
+                <li> <a href = "faqs.html">FAQS</a></li>
+                <li> <a href = "contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="content">
+        <div id="logo_box"><a href="index.html"><img src="images/jesterLogo.png" class = "icon"></a></div>
+
+        <h1 style="color:#9bc442"> Fluffernutter and Friends </h1>
+
+        <div class="blurb-part">
+            <img class="blurb_img" src="images/rocks_icon.png">
+            <p>Play as Fluffernutter, a lonely bunny rabit living on the outskirts of the Forest.
+               The darkness has always beckoned but this morning is different. A trail of glimmering crayons
+               leads into the trees. Perhaps the friends you have always wanted lay at the end of the trail.</p>
+        </div>
+
+        <div class="blurb-part">
+            <p>Will you follow the trail of crayons for a warm and quiet tale of friendship?</p>
+            <img class="blurb_img" src="images/happy_bunny.png">
+        </div>
+
+        <div class="blurb-part">
+            <img class="blurb_img" src="images/darth_bunny.png">
+            <p>Or will you stray from the path and uncover the secrets of the ever twisting Magical Forest? </p>
+        </div>
+
+        <p style="font-size:20px; font-family:fascinate; color:#6a1d67"> Your adventure begins now! </p>
+
+        <div id="slideshow">
+            <div id="slide">
+                <img src="images/g1-placeholder.png">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="hammy.js"></script> 

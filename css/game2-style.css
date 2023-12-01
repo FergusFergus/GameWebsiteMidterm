@@ -1,0 +1,38 @@
+/* Game 2 */
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+h1, p, .image, h2 {
+    background-color:  #fcffff;
+    border-radius: 15px;
+
+    border-width: 10px;
+    border-color:  #fcffff;
+    border-style: solid;
+
+    margin-bottom: 10px;
+}
+.image {
+        width: 650px;
+        border-radius: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: solid;
+        border-color: #f5d551;
+        border-width: 10px}
+
+.icon {
+    height: 100px;
+    box-sizing: border-box;
+    margin: 15px;
+}
+
+#logo_box {
+  width: 100%;
+  text-align: center;
+}
+

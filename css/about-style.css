@@ -1,0 +1,77 @@
+/* ABOUT PAGE CSS */
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+
+  ul {
+    margin: 0;
+    padding-right: 12px;
+    padding-left: 12px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+li {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+
+}
+
+  .icon {
+      height: 100px;
+      box-sizing: border-box;
+      margin: 15px;
+  }
+
+#logo_box {
+    width: 100%;
+    text-align: center;
+}
+
+h2{
+    color: #6a1d67;
+}
+h3 {
+    color: #cb3334;
+}
+
+h4{
+    background: #f5d551;
+    color: #6a1d67;
+    border-radius: 15px;
+    border-width: 10px;
+    border-color:  #f5d551;
+    border-style: solid;
+    width: 60%;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    li a {
+        max-width: 150px;
+    }
+
+  }
+
+  @media screen and (max-width: 700px) {
+    li a {
+        max-width: 100px;
+    }
+
+  }
+
+@media screen and (max-width: 600px) {
+    ul {
+        display: block;
+    }
+  }

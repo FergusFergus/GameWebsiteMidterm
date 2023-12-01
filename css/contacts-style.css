@@ -1,0 +1,153 @@
+/* Style sheet for the contacts page. Contains style information specific 
+   to the contacts page. */
+
+/* GENERAL FORMATTING */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2c2826;
+}
+
+/* FORMATTING FOR THE ICON AT THE TOP OF THE PAGE */
+.icon {
+    height: 100px;
+    box-sizing: border-box;
+    margin: 15px;
+}
+
+/* Formatting for Header */
+
+h1 {
+    font-family: fascinate;
+    font-size: 30px;
+}
+
+/* FORMATTING FOR THE BLURB AT THE TOP */
+#q-blurb {
+    max-width: 600px;
+    padding: 10px 40px 10px 40px;
+    text-align: justify;
+}
+
+/* FORMATTING FOR FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5d551;
+    width: 95%;
+    padding: 10px;
+    border-radius: 15px;
+
+    align-items: center;
+}
+
+.field {
+    width: inherit;
+    /*background-color: lightblue;*/
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.field label {
+    width: 100px;
+    /*background-color: red;*/
+    text-align: left;
+}
+
+.field input[type="text"] {
+    flex-grow: 1;
+    max-width: 400px;
+    height: 1.5em;
+
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+
+    padding: 1em;
+
+    border-radius: 15px;
+    border: none;
+
+    border: 2px solid #ffffff;
+    font-size: 13px;
+}
+
+.field input[type="text"]:focus {
+    outline: none;
+
+    border: 2px solid #9bc442;
+}
+
+.field textarea {
+    width:90%;
+    height: 200px;
+    max-width: 600px;
+
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+
+    padding: 1em;
+
+    border-radius: 15px;
+    border: none;
+    resize: none;
+
+    border: 2px solid #ffffff;
+}
+
+.field textarea:focus {
+    outline: none;
+
+
+    border: 2px solid #9bc442;
+
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    height: 30px;
+    width: 100px;
+
+   /* padding: 0.5em;*/
+
+    border: none;
+    border-radius: 15px;
+    outline: none;
+
+    font-size: 16px;
+
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #cb3334;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #cb3334;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #cb3334;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #cb3334;
+}
+
+input[type="submit"]:hover {
+    background-color: #9bc442;
+}
+
+input[type="submit"]:active {
+    background-color: #6a1d67;
+    color: #ffffff;
+}

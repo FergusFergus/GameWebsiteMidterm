@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="keywords" content="Video Games, Frog, Games, Frequently Asked Questions, Jester Games">
+        <title>FAQs</title>
+        <link rel="stylesheet" type="text/css" href="css/master.css">
+        <link rel="stylesheet" type="text/css" href="css/nav-style.css">
+        <link rel="stylesheet" type="text/css" href="css/faq.css">
+    </head>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+     crossorigin="anonymous"> </script>
+
+     <script type="text/javascript">
+         $(document).ready(function () {
+             // Hide all but the first response
+             $(".two_col_picked").map(function (i, elem) {
+                     $(elem).hide()
+               });
+
+             $(".two_col_picked").first().show();
+
+             // Show the approriate question when a faq list item is clicked
+             $(".option_col li").on("click", function () {
+                 var option_name = $(this).attr("name");
+
+                 // Hide the rest of the answers
+                 $(".two_col_picked").map(function (i, elem) {
+                     $(elem).hide()
+                 });
+
+                 // Show the correct answer
+                 $("[name='" + option_name + "']").filter(".two_col_picked").first().show();
+
+             });
+         });
+         
+
+     </script>
+
+    <body>
+
+        <header>
+
+            <div class = 'container'>
+                <a href = "index.html"> <img src = "images/logo_white_bg.png" alt = "logo" class = "logo" height = 60px style="margin: 5px" > 
+                </a>
+        </div>
+        <nav class = nav1 id = nav1>
+            <button class = "hamburger" id = "hamburger">
+                <i class = menu-btn></i>
+            </button>
+            <ul class = nav-ul id = nav-ul>
+                    <li> <a href = "index.html">Home</a></li>
+                    <li> <a href = "about.html">About</a></li>
+                    <li> <a href = "game1.html">Bunny</a></li>
+                    <li> <a href = "game2.html">Space</a></li>
+                    <li> <a href = "game3.html">Soldier</a></li>
+                    <li> <a href = "faqs.html">FAQS</a></li>
+                    <li> <a href = "contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div id="logo_box"><a href="index.html"><img src="images/jesterLogo.png" class = "icon"></a></div>
+
+        <h1> Jester Games FAQ </h1>
+
+
+        <div class="two_col_select_container">
+            <div class="option_col">
+                <ul>
+                    <li class="two_col_option" name="faq1"> Where are your games available? </li>
+                    <li class="two_col_option" name="faq2"> Can I sell Tin Soldier merchendise? </li>
+                    <li class="two_col_option" name="faq3"> Are there openings on the team? </li>
+                    <li class="two_col_option" name="faq4"> What technologies do you use to make your games? </li>
+                    <li class="two_col_option" name="faq5"> When is your next game coming out? </li>
+                </ul>
+
+            </div>
+
+            <div class="show_picked_col">
+                <div class="two_col_picked" name="faq1">
+                    <h2> Where are your games available? </h2>
+                    <p> Space Race is available through steam and xBox and play station stores.</p>
+                    <p> Tin Soldier is available through steam and on switch, xBox and play station.</p>
+                    <p> Fluffernutter and Friends is currently only available through steam.</p>                
+
+                </div>
+
+
+                <div class="two_col_picked" name="faq2">
+                    <h2> Can I sell Tin Soldier merchendise? </h2>
+                    <p> It depends. </p>
+                    <p> If you are selling small batch prints or apparel with your <em>own creations and art</em> 
+                        inspired by Tin Soldier or any of our other games then absolutely! </p>
+                    <p> We do however, ask that you refrain from selling any merchandise with our logo or offical art.
+                        Additionally, we ask that you not sell through Redbubble. </p>
+
+                </div>
+
+
+                <div class="two_col_picked" name="faq3">
+                    <h2> Are there openings on the team? </h2>
+
+                    <p> We are a small team and unfortunately we aren't currently looking for 
+                        additional help nor do we plan on expanding anytime in the near future. </p>
+                    <p> If we do eventually end up needing more help, we'll be sure to let everyone
+                        know via our site and social media accounts!</p>
+                </div>
+
+                <div class="two_col_picked" name="faq4">
+                    <h2> What technologies do you use to make your games? </h2>
+
+                    <p> For asset creation we use piskel, a free online pixel art program, photoshop and blender.</p>
+
+                    <p> We use the Unity game engine to put it all together into what you see on screen!</p>
+                </div>
+
+                <div class="two_col_picked" name="faq5">
+                    <h2> When is your next game coming out? </h2>
+
+                    <p> Space Race IV is out in early access now! </p>
+
+                    <p> As for our <em>next</em> game, we are still in the early stages of developpment,
+                        so we don't have a release schedule yet. What we can say is that it will involve
+                        ghosts, faeries, and healthy serving of ritual magic.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+    <script src="hammy.js"></script> 
+</html>

@@ -1,0 +1,23 @@
+/* Basic CSS to be used on all pages */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    font-family: Josefin Sans;
+    color: #2c2826;
+}
+
+@font-face {
+    font-family: 'fascinate';
+    src: url('../fonts/fascinate-regular-webfont.woff2') format('woff2'),
+         url('../fonts/fascinate-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: fascinate;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,77 @@
+/* CSS for the FAQ PAGE */
+
+* {
+  box-sizing: border-box;
+}
+
+.icon {
+    height: 100px;
+    box-sizing: border-box;
+    margin: 15px;
+}
+
+#logo_box {
+    width: 100%;
+    text-align: center;
+}
+
+
+.two_col_select_container {
+    /*background-color: pink;*/
+
+    display: flex;
+    flex-direction: row;
+}
+
+.option_col {
+    /*background-color: orange;*/
+    width: 300px;
+    max-width: 200px;
+    min-width: 200px;
+}
+
+.option_col ul {
+    list-style-type: none;
+    /*list-style-position: inside;*/
+    padding: 20px;
+
+}
+
+.option_col li {
+    display: block;
+    background-color: #9bc442;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.option_col li:hover {
+    background-color: #f5d551;
+}
+
+.option_col li:active {
+    background-color: #6a1d67;
+    color: #fcffff;
+}
+
+
+.show_picked_col {
+    /*background-color: lightblue;*/
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the individual responses */
+.show_picked_col .two_col_picked {
+    background-color: #f5d551;
+    /*flex-grow: 1;*/
+    border-radius: 15px;
+    padding: 15px;
+    text-align: left;
+    max-width: 600px;
+}
+

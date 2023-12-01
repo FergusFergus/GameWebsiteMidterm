@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact us!</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="css/contacts-style.css">
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link rel="stylesheet" type="text/css" href="css/nav-style.css">
+</head>
+
+<!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+ integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+ crossorigin="anonymous"> </script>
+
+<!-- Include the scripts for this page -->
+<script type="text/javascript" src="scripts/contacts.js"></script>
+
+<body>
+
+        <!-- NAV BAR -->
+        <header>
+    
+        <div class = 'container'>
+            <a href="index.html"><img src = "images/logo_white_bg.png" alt = "logo" class = "logo" height = 60px style="margin: 5px"></a>
+        </div>
+        <nav class = nav1 id = nav1>
+            <button class = "hamburger" id = "hamburger">
+                <i class = menu-btn></i>
+            </button>
+            <ul class = nav-ul id = nav-ul>
+                    <li> <a href = "index.html">Home</a></li>
+                    <li> <a href = "about.html">About</a></li>
+                    <li> <a href = "game1.html">Bunny</a></li>
+                    <li> <a href = "game2.html">Space</a></li>
+                    <li> <a href = "game3.html">Soldier</a></li>
+                    <li> <a href = "faqs.html">FAQS</a></li>
+                    <li> <a href = "contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+    <!-- FORM CONTENT -->
+
+    <div class = "content">
+        <div><a href="index.html"><img src="images/jesterLogo.png" class = "icon"></a></div>
+
+        <h1>Contact Jester Games!</h1>
+
+        <div id="q-blurb">
+            <p>Got a question? Want to tell us what you think of our latest game? Found a bug?
+           Let us know here! Just give us your name, email and ask away!</p>
+        </div>
+
+        <form 
+            name= "contact_us_resp"
+            id= "contact_us_resp"
+            method = "post"
+            onsubmit="return validate()">
+
+
+            <div class="field">
+                <label name="name" for="name">Name*:</label>
+                <input type="text" name="name" id="name">
+            </div>
+
+            <div class="field">
+                <label name="email" for="email">E-mail*:</label>
+                <input type="text" name="email" id="email">
+            </div>
+
+            <div class="field">
+                <textarea name="question" id="question" placeholder=""></textarea>
+            </div>
+
+            <div class="field">
+                <input type="submit" name="submit" value="Submit!">
+            </div>
+
+        </form>
+
+
+    </div>
+
+</body>
+<script src="hammy.js"></script> 
+</html>
